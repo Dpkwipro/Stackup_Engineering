@@ -1,3 +1,5 @@
+> **Completed submission:** see [SUBMISSION.md](SUBMISSION.md) for solution files, outputs and run commands.
+
 # StackUp Engineering Academy — Data Engineering Assessment
 
 > **Learning Pathway:** Data Analyst / Modeler / BI Specialist → Fullstack Data Engineer

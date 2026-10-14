@@ -1,0 +1,25 @@
+{
+  "dag_id": "presight_etl_pipeline",
+  "schedule": "0 6 * * *",
+  "timezone": "Asia/Dubai",
+  "example_local_schedule": "2026-10-13T06:00:00+04:00",
+  "example_utc_schedule": "2026-10-13T02:00:00+00:00",
+  "retries": 2,
+  "retry_delay_seconds": 300.0,
+  "parallel_extract_dependencies": true,
+  "catchup": false,
+  "max_active_runs": 1,
+  "injected_failure_completeness_pct": 70,
+  "failure_run_state": "failed",
+  "failure_task_states": {
+    "end": "upstream_failed",
+    "start": "success",
+    "extract_projects": "success",
+    "extract_transactions": "success",
+    "extract_employees": "success",
+    "validate_data_quality": "failed",
+    "transform_and_enrich": "upstream_failed",
+    "load_to_output": "upstream_failed",
+    "generate_pipeline_report": "upstream_failed"
+  }
+}

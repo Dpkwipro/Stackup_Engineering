@@ -1,0 +1,25 @@
+rule_name,column,dimension,condition,checked_rows,passed_rows,failed_rows,score_pct,threshold_pct,status,details,rule_id,tablename
+employee_id must be present,employee_id,completeness,not_null; score >= 85%,1000,1000,0,100.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R020,employees
+full_name must be present,full_name,completeness,not_null; score >= 85%,1000,1000,0,100.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R021,employees
+email must be present,email,completeness,not_null; score >= 85%,1000,990,10,99.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R022,employees
+department must be present,department,completeness,not_null; score >= 85%,1000,1000,0,100.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R023,employees
+role must be present,role,completeness,not_null; score >= 85%,1000,1000,0,100.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R024,employees
+level must be present,level,completeness,not_null; score >= 85%,1000,1000,0,100.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R025,employees
+hire_date must be present,hire_date,completeness,not_null; score >= 85%,1000,1000,0,100.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R026,employees
+salary must be present,salary,completeness,not_null; score >= 85%,1000,1000,0,100.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R027,employees
+manager_id must be present,manager_id,completeness,not_null; score >= 85%,1000,1000,0,100.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R028,employees
+region must be present,region,completeness,not_null; score >= 85%,1000,1000,0,100.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R029,employees
+status must be present,status,completeness,not_null; score >= 85%,1000,1000,0,100.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R030,employees
+years_experience must be present,years_experience,completeness,not_null; score >= 85%,1000,1000,0,100.0,85.0,PASS,Total rows: 1000; excluded rows: 0,R031,employees
+Key must be present and unique,employee_id,uniqueness,unique,1000,1000,0,100.0,100.0,PASS,Total rows: 1000; excluded rows: 0,R032,employees
+salary within allowed range,salary,numeric_validity,between 10000 and 100000; allow_null,1000,1000,0,100.0,100.0,PASS,Total rows: 1000; excluded rows: 0,R033,employees
+years_experience within allowed range,years_experience,numeric_validity,between 0 and 50; allow_null,1000,995,5,99.5,100.0,FAIL,Total rows: 1000; excluded rows: 0,R034,employees
+hire_date must be a valid date,hire_date,date_validity,not_future; allow_null,1000,992,8,99.2,100.0,FAIL,Total rows: 1000; excluded rows: 0,R035,employees
+Junior salary band,salary,consistency,between 12000 and 17000 when level = Junior,187,184,3,98.4,100.0,FAIL,Total rows: 1000; excluded rows: 813,R036,employees
+Mid salary band,salary,consistency,between 17000 and 24000 when level = Mid,366,366,0,100.0,100.0,PASS,Total rows: 1000; excluded rows: 634,R037,employees
+Senior salary band,salary,consistency,between 25000 and 36000 when level = Senior,303,303,0,100.0,100.0,PASS,Total rows: 1000; excluded rows: 697,R038,employees
+Lead salary band,salary,consistency,between 38000 and 50000 when level = Lead,114,114,0,100.0,100.0,PASS,Total rows: 1000; excluded rows: 886,R039,employees
+Director salary band,salary,consistency,between 50000 and 70000 when level = Director,30,30,0,100.0,100.0,PASS,Total rows: 1000; excluded rows: 970,R040,employees
+Senior role matches level,level,consistency,equals Senior when role starts_with Senior,69,22,47,31.88,100.0,FAIL,Total rows: 1000; excluded rows: 931,R041,employees
+Lead role matches level,level,consistency,equals Lead when role starts_with Lead,54,4,50,7.41,100.0,FAIL,Total rows: 1000; excluded rows: 946,R042,employees
+manager_id must reference an existing record,manager_id,referential_integrity,exists in employees.employee_id; allow_null,1000,995,5,99.5,100.0,FAIL,Total rows: 1000; excluded rows: 0,R043,employees

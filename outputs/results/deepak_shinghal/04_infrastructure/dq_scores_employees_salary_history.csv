@@ -1,0 +1,17 @@
+rule_name,column,dimension,condition,checked_rows,passed_rows,failed_rows,score_pct,threshold_pct,status,details,rule_id,tablename
+employee_id must be present,employee_id,completeness,not_null; score >= 90%,1826,1826,0,100.0,90.0,PASS,Total rows: 1826; excluded rows: 0,R062,employees_salary_history
+previous_salary must be present,previous_salary,completeness,not_null; score >= 90%,1826,1232,594,67.47,90.0,FAIL,Total rows: 1826; excluded rows: 0,R063,employees_salary_history
+new_salary must be present,new_salary,completeness,not_null; score >= 90%,1826,1826,0,100.0,90.0,PASS,Total rows: 1826; excluded rows: 0,R064,employees_salary_history
+previous_role must be present,previous_role,completeness,not_null; score >= 90%,1826,1232,594,67.47,90.0,FAIL,Total rows: 1826; excluded rows: 0,R065,employees_salary_history
+new_role must be present,new_role,completeness,not_null; score >= 90%,1826,1826,0,100.0,90.0,PASS,Total rows: 1826; excluded rows: 0,R066,employees_salary_history
+previous_level must be present,previous_level,completeness,not_null; score >= 90%,1826,1232,594,67.47,90.0,FAIL,Total rows: 1826; excluded rows: 0,R067,employees_salary_history
+new_level must be present,new_level,completeness,not_null; score >= 90%,1826,1826,0,100.0,90.0,PASS,Total rows: 1826; excluded rows: 0,R068,employees_salary_history
+effective_date must be present,effective_date,completeness,not_null; score >= 90%,1826,1826,0,100.0,90.0,PASS,Total rows: 1826; excluded rows: 0,R069,employees_salary_history
+change_type must be present,change_type,completeness,not_null; score >= 90%,1826,1826,0,100.0,90.0,PASS,Total rows: 1826; excluded rows: 0,R070,employees_salary_history
+change_reason must be present,change_reason,completeness,not_null; score >= 90%,1826,1826,0,100.0,90.0,PASS,Total rows: 1826; excluded rows: 0,R071,employees_salary_history
+Key must be present and unique,employee_id|effective_date|new_salary|new_role|new_level|change_type|change_reason,uniqueness,unique,1826,1826,0,100.0,100.0,PASS,Total rows: 1826; excluded rows: 0,R072,employees_salary_history
+previous_salary within allowed range,previous_salary,numeric_validity,between 0 and 100000; allow_null,1232,1232,0,100.0,100.0,PASS,Total rows: 1826; excluded rows: 594,R073,employees_salary_history
+new_salary within allowed range,new_salary,numeric_validity,between 0 and 100000; allow_null,1826,1826,0,100.0,100.0,PASS,Total rows: 1826; excluded rows: 0,R074,employees_salary_history
+effective_date must be a valid date,effective_date,date_validity,not_future; allow_null,1826,1826,0,100.0,100.0,PASS,Total rows: 1826; excluded rows: 0,R075,employees_salary_history
+new_salary cannot be negative,new_salary,consistency,non_negative; allow_null,1826,1826,0,100.0,100.0,PASS,Total rows: 1826; excluded rows: 0,R076,employees_salary_history
+employee_id must reference an existing record,employee_id,referential_integrity,exists in employees.employee_id; allow_null,1826,1826,0,100.0,100.0,PASS,Total rows: 1826; excluded rows: 0,R077,employees_salary_history

@@ -1,0 +1,129 @@
+[
+  {
+    "issue": "missing_employee_id",
+    "rows_affected": 0,
+    "action": "Reject missing required identifiers/attributes",
+    "employee_ids": []
+  },
+  {
+    "issue": "missing_full_name",
+    "rows_affected": 0,
+    "action": "Reject missing required identifiers/attributes",
+    "employee_ids": []
+  },
+  {
+    "issue": "missing_department",
+    "rows_affected": 0,
+    "action": "Reject missing required identifiers/attributes",
+    "employee_ids": []
+  },
+  {
+    "issue": "missing_role",
+    "rows_affected": 0,
+    "action": "Reject missing required identifiers/attributes",
+    "employee_ids": []
+  },
+  {
+    "issue": "missing_level",
+    "rows_affected": 0,
+    "action": "Reject missing required identifiers/attributes",
+    "employee_ids": []
+  },
+  {
+    "issue": "missing_status",
+    "rows_affected": 0,
+    "action": "Reject missing required identifiers/attributes",
+    "employee_ids": []
+  },
+  {
+    "issue": "missing_email",
+    "rows_affected": 10,
+    "action": "Set unknown@presight.ai",
+    "employee_ids": [
+      "EMP0358",
+      "EMP0373",
+      "EMP0461",
+      "EMP0536",
+      "EMP0647",
+      "EMP0658",
+      "EMP0704",
+      "EMP0791",
+      "EMP0850",
+      "EMP0852"
+    ]
+  },
+  {
+    "issue": "invalid_email",
+    "rows_affected": 0,
+    "action": "Set unknown@presight.ai",
+    "employee_ids": []
+  },
+  {
+    "issue": "invalid_hire_date",
+    "rows_affected": 8,
+    "action": "Set unknown date (null)",
+    "employee_ids": [
+      "EMP0038",
+      "EMP0160",
+      "EMP0175",
+      "EMP0395",
+      "EMP0551",
+      "EMP0600",
+      "EMP0855",
+      "EMP0973"
+    ]
+  },
+  {
+    "issue": "implausible_hire_date",
+    "rows_affected": 3,
+    "action": "Set unknown date (null); overlaps invalid dates",
+    "employee_ids": [
+      "EMP0160",
+      "EMP0395",
+      "EMP0551"
+    ]
+  },
+  {
+    "issue": "salary_out_of_range",
+    "rows_affected": 3,
+    "action": "Impute median of valid peers at same level",
+    "employee_ids": [
+      "EMP0356",
+      "EMP0867",
+      "EMP0900"
+    ]
+  },
+  {
+    "issue": "years_experience_out_of_range",
+    "rows_affected": 5,
+    "action": "Impute median of valid peers at same level",
+    "employee_ids": [
+      "EMP0216",
+      "EMP0356",
+      "EMP0445",
+      "EMP0583",
+      "EMP0720"
+    ]
+  },
+  {
+    "issue": "active_without_valid_hire_date",
+    "rows_affected": 8,
+    "action": "Set Inactive pending HR confirmation",
+    "employee_ids": [
+      "EMP0038",
+      "EMP0160",
+      "EMP0175",
+      "EMP0395",
+      "EMP0551",
+      "EMP0600",
+      "EMP0855",
+      "EMP0973"
+    ]
+  },
+  {
+    "issue": "duplicate_employee_id",
+    "rows_affected": 0,
+    "action": "Reject duplicates",
+    "employee_ids": []
+  }
+]

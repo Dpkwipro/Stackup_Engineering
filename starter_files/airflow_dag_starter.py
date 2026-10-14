@@ -67,11 +67,17 @@ from airflow.utils.dates import days_ago
 
 # Import your ETL functions from the etl_starter
 import sys
+
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 from starter_files.etl_starter import (
-    load_projects, load_employees, load_transactions,
-    transform_projects, clean_employees, enrich_transactions,
-    run_data_quality_checks, write_outputs
+    load_projects,
+    load_employees,
+    load_transactions,
+    transform_projects,
+    clean_employees,
+    enrich_transactions,
+    run_data_quality_checks,
+    write_outputs,
 )
 
 logger = logging.getLogger(__name__)
@@ -100,6 +106,7 @@ default_args = {
 # ==============================================================================
 # TASK 3.3b — Task functions
 # ==============================================================================
+
 
 def task_extract_projects(**context):
     """
@@ -203,7 +210,9 @@ def task_generate_pipeline_report(**context):
     # Pull XCom values
     # YOUR CODE HERE
 
-    report_path = os.path.join(BASE_DIR, "outputs", f"pipeline_report_{execution_date.date()}.txt")
+    report_path = os.path.join(
+        BASE_DIR, "outputs", f"pipeline_report_{execution_date.date()}.txt"
+    )
     # YOUR CODE HERE — write the report
     pass
 
@@ -224,7 +233,7 @@ with DAG(
     dag_id="presight_etl_pipeline",
     default_args=default_args,
     description="Daily ETL pipeline for Presight project management data",
-    schedule_interval=None,      # TODO: replace with correct cron expression
+    schedule_interval=None,  # TODO: replace with correct cron expression
     catchup=False,
     tags=["presight", "etl", "assessment"],
     max_active_runs=1,
@@ -232,21 +241,21 @@ with DAG(
 
     # ── Boundary tasks ─────────────────────────────────────────────────────────
     start = EmptyOperator(task_id="start")
-    end   = EmptyOperator(task_id="end")
+    end = EmptyOperator(task_id="end")
 
     # ── Extraction tasks ───────────────────────────────────────────────────────
     # TODO: Define PythonOperator for each extract task
-    extract_projects      = None  # YOUR CODE HERE
-    extract_employees     = None  # YOUR CODE HERE
-    extract_transactions  = None  # YOUR CODE HERE
+    extract_projects = None  # YOUR CODE HERE
+    extract_employees = None  # YOUR CODE HERE
+    extract_transactions = None  # YOUR CODE HERE
 
     # ── DQ gate ────────────────────────────────────────────────────────────────
-    validate_dq           = None  # YOUR CODE HERE
+    validate_dq = None  # YOUR CODE HERE
 
     # ── Transform & load ───────────────────────────────────────────────────────
-    transform_enrich      = None  # YOUR CODE HERE
-    load_output           = None  # YOUR CODE HERE
-    pipeline_report       = None  # YOUR CODE HERE
+    transform_enrich = None  # YOUR CODE HERE
+    load_output = None  # YOUR CODE HERE
+    pipeline_report = None  # YOUR CODE HERE
 
     # ===========================================================================
     # TASK 3.3c — Wire up dependencies

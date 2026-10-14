@@ -1,0 +1,11 @@
+project_id,project_name,department,status,start_date,end_date,budget,actual_cost,project_manager_id,priority,region,budget_variance,is_over_budget,duration_days,budget_utilisation_pct,status_category,risk_level
+PRJ0476,Legacy System Decommission Phase 2 #476,Procurement,In Progress,2024-01-21,,2000000.0,2381747.0,EMP0832,Medium,Abu Dhabi,381747.0,True,,119.08735,Active,High
+PRJ0101,Sentiment Analysis Engine Phase 2 #101,HR,In Progress,2024-06-12,,2000000.0,2381174.0,EMP0092,Critical,Ras Al Khaimah,381174.0,True,,119.0587,Active,High
+PRJ0200,Customer Portal Redesign - Q3 #200,Marketing,In Progress,2023-04-27,,2000000.0,2332005.0,EMP0950,Medium,Dubai,332005.0,True,,116.60025,Active,High
+PRJ0237,Predictive Maintenance - Q3 #237,Data Science,In Progress,2024-02-04,,2000000.0,2324313.0,EMP0605,High,Abu Dhabi,324313.0,True,,116.21565,Active,High
+PRJ0341,Internal Audit Digitisation #341,Finance,In Progress,2025-01-31,,2000000.0,2295567.0,EMP0089,High,Dubai,295567.0,True,,114.77835,Active,High
+PRJ0488,Crisis Response System Phase 2 #488,Engineering,In Progress,2024-08-17,,2000000.0,2292796.0,EMP0850,Low,Dubai,292796.0,True,,114.6398,Active,High
+PRJ0053,Predictive Healthcare Phase 3 #53,Digital,Completed,2022-01-25,2023-05-30,2000000.0,2277761.0,EMP0877,Medium,Dubai,277761.0,True,490.0,113.88805,Closed,High
+PRJ0250,Data Platform Modernisation - Q4 #250,HR,Completed,2024-05-30,2024-08-08,2000000.0,2277227.0,EMP0416,High,Abu Dhabi,277227.0,True,70.0,113.86135,Closed,High
+PRJ0344,HR System Upgrade Phase 3 #344,Legal,Completed,2023-06-26,2023-11-14,2000000.0,2274029.0,EMP0273,Low,Abu Dhabi,274029.0,True,141.0,113.70145,Closed,High
+PRJ0140,IoT Sensor Network Phase 2 #140,Digital,In Progress,2022-03-21,,2000000.0,2265880.0,EMP0939,Critical,Dubai,265880.0,True,,113.294,Active,High

@@ -1,0 +1,66 @@
+# Isolated assessment services; existing Kafka/data and root compose stay intact.
+services:
+  kafka:
+    image: bitnamilegacy/kafka:4.0.0-debian-12-r10
+    ports:
+      - "127.0.0.1:9094:9094"
+    environment:
+      KAFKA_ENABLE_KRAFT: "yes"
+      KAFKA_CFG_NODE_ID: "2001"
+      KAFKA_CFG_PROCESS_ROLES: broker,controller
+      KAFKA_CFG_CONTROLLER_QUORUM_VOTERS: "2001@localhost:9093"
+      KAFKA_CFG_CONTROLLER_LISTENER_NAMES: CONTROLLER
+      KAFKA_CFG_LISTENERS: "CLIENT://:29092,EXTERNAL://:9094,CONTROLLER://:9093"
+      KAFKA_CFG_ADVERTISED_LISTENERS: "CLIENT://kafka:29092,EXTERNAL://localhost:9094"
+      KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP: "CONTROLLER:PLAINTEXT,CLIENT:PLAINTEXT,EXTERNAL:PLAINTEXT"
+      KAFKA_CFG_INTER_BROKER_LISTENER_NAME: CLIENT
+      KAFKA_CFG_OFFSETS_TOPIC_REPLICATION_FACTOR: "1"
+      KAFKA_CFG_AUTO_CREATE_TOPICS_ENABLE: "false"
+      ALLOW_PLAINTEXT_LISTENER: "yes"
+    volumes:
+      - kafka_data:/bitnami/kafka
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: presight
+      POSTGRES_PASSWORD: assessment_local_only
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U presight -d airflow"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  airflow:
+    depends_on:
+      postgres:
+        condition: service_healthy
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    ports:
+      - "127.0.0.1:8082:8080"
+    environment:
+      PRESIGHT_PROJECT_ROOT: /opt/airflow/project
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DAG_IGNORE_FILE_SYNTAX: glob
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__PARALLELISM: "4"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://presight:assessment_local_only@postgres/airflow
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+      AIRFLOW__CORE__DEFAULT_TIMEZONE: Asia/Dubai
+      AIRFLOW__WEBSERVER__DEFAULT_UI_TIMEZONE: Asia/Dubai
+      PYTHONDONTWRITEBYTECODE: "1"
+    volumes:
+      - ../../../../:/opt/airflow/project:ro
+      - ./:/opt/airflow/dags:ro
+      # Keep this mount even when generated subfolders are cleaned up.
+      - ../../../../outputs:/opt/airflow/project/outputs
+      - airflow_data:/opt/airflow
+    # The volume retains PID files, but processes do not survive a container restart.
+    command: ["bash", "-c", "rm -f /opt/airflow/airflow-webserver.pid && exec airflow standalone"]
+volumes:
+  kafka_data:
+  airflow_data:
+  postgres_data:

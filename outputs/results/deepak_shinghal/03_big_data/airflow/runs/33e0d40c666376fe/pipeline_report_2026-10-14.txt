@@ -1,0 +1,39 @@
+Presight Airflow pipeline report
+Run ID: manual__2026-10-14T19:13:43.972564+00:00
+Logical execution date: 2026-10-14T19:13:43.972564+00:00
+projects raw/clean: 500/500
+employees raw/clean: 1000/1000
+transactions raw/clean: 50000/50000
+DQ results: {
+  "projects": {
+    "dataset": "projects",
+    "row_count": 500,
+    "completeness_pct": {
+      "project_id": 100.0,
+      "project_name": 100.0
+    },
+    "duplicate_primary_ids": 0
+  },
+  "employees": {
+    "dataset": "employees",
+    "row_count": 1000,
+    "completeness_pct": {
+      "employee_id": 100.0,
+      "email": 99.0
+    },
+    "duplicate_primary_ids": 0
+  },
+  "transactions": {
+    "dataset": "transactions",
+    "row_count": 50000,
+    "completeness_pct": {
+      "transaction_id": 100.0,
+      "project_id": 100.0
+    },
+    "duplicate_primary_ids": 0
+  }
+}
+Files written:
+/opt/airflow/project/outputs/results/deepak_shinghal/03_big_data/airflow/runs/33e0d40c666376fe/projects_clean.csv
+/opt/airflow/project/outputs/results/deepak_shinghal/03_big_data/airflow/runs/33e0d40c666376fe/employees_clean.csv
+/opt/airflow/project/outputs/results/deepak_shinghal/03_big_data/airflow/runs/33e0d40c666376fe/transactions_clean.csv

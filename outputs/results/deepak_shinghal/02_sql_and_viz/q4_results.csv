@@ -1,0 +1,436 @@
+project_id,project_name,department,project_status,open_transaction_count,open_transaction_value
+PRJ0498,Visual Analytics Suite #498,Data Science,Completed,35,3886933
+PRJ0164,Predictive Maintenance Phase 3 #164,Sales,Completed,29,3696478
+PRJ0304,Customer Portal Redesign #304,Legal,Completed,31,3654834
+PRJ0272,Fleet Management System Phase 2 #272,Data Science,Completed,25,3600482
+PRJ0029,Citizen Services Portal Phase 3,Sustainability,Completed,28,3530929
+PRJ0344,HR System Upgrade Phase 3 #344,Legal,Completed,26,3451529
+PRJ0409,Visual Analytics Suite #409,IT,Completed,28,3426980
+PRJ0385,Supply Chain Automation Phase 2 #385,Operations,Completed,32,3384042
+PRJ0144,Compliance Monitoring Phase 2 #144,Finance,In Progress,34,3191114
+PRJ0403,Network Security Overhaul #403,Sustainability,In Progress,32,3041073
+PRJ0374,Visual Analytics Suite #374,Sustainability,In Progress,31,3022755
+PRJ0070,Smart Building System Phase 3 #70,Sustainability,Completed,38,3017147
+PRJ0392,Resource Scheduling Tool Phase 3 #392,Sustainability,Completed,32,3013727
+PRJ0194,Knowledge Management Portal - Q3 #194,HR,Completed,25,2971562
+PRJ0023,Workflow Automation,Data Science,In Progress,37,2950955
+PRJ0326,Recommendation System Phase 2 #326,Sustainability,Completed,37,2882009
+PRJ0399,Real-time Analytics Engine Phase 3 #399,Legal,In Progress,33,2821493
+PRJ0036,Employee Wellness App Phase 3,Engineering,Completed,22,2814949
+PRJ0169,Master Data Management #169,Operations,In Progress,25,2813332
+PRJ0208,Disaster Recovery Setup Phase 3 #208,Procurement,In Progress,31,2797281
+PRJ0494,Data Platform Modernisation Phase 2 #494,Procurement,On Hold,26,2740537
+PRJ0019,Supply Chain Automation Phase 3,Engineering,In Progress,30,2735891
+PRJ0063,Real-time Analytics Engine Phase 3 #63,Sustainability,Completed,37,2734389
+PRJ0233,ERP Consolidation Phase 2 #233,Sales,Completed,27,2713418
+PRJ0323,HR System Upgrade Phase 3 #323,Legal,In Progress,28,2712209
+PRJ0329,IoT Sensor Network Phase 2 #329,Data Science,Completed,17,2706781
+PRJ0066,Risk Assessment Framework #66,Legal,In Progress,21,2702185
+PRJ0095,AI Forecasting Engine Phase 2 #95,Finance,In Progress,26,2683220
+PRJ0325,Customer Feedback Platform - Q1 #325,Marketing,In Progress,37,2672844
+PRJ0375,Customer Portal Redesign #375,HR,Completed,31,2669185
+PRJ0341,Internal Audit Digitisation #341,Finance,In Progress,29,2668822
+PRJ0481,Workflow Automation Phase 3 #481,IT,Completed,27,2667419
+PRJ0358,Energy Optimisation Platform - Q2 #358,Sustainability,In Progress,29,2654949
+PRJ0028,Smart Building System,Operations,In Progress,27,2621366
+PRJ0168,Asset Tracking System Phase 2 #168,Legal,In Progress,38,2605029
+PRJ0240,AI Forecasting Engine #240,Engineering,In Progress,27,2554098
+PRJ0060,Customer Feedback Platform Phase 2 #60,HR,In Progress,29,2553313
+PRJ0012,Employee Wellness App Phase 3,HR,In Progress,24,2542063
+PRJ0139,Employee Wellness App - Q2 #139,IT,Completed,32,2540391
+PRJ0334,IoT Sensor Network - Q4 #334,Legal,In Progress,22,2531798
+PRJ0030,Visual Analytics Suite Phase 2,Sustainability,Completed,23,2508010
+PRJ0214,Sentiment Analysis Engine #214,HR,On Hold,29,2490875
+PRJ0348,Contract Lifecycle Management - Q3 #348,Engineering,On Hold,22,2473907
+PRJ0356,Document Management System Phase 2 #356,Sustainability,Completed,33,2472424
+PRJ0217,Predictive Maintenance Phase 2 #217,IT,Completed,24,2472366
+PRJ0455,Resource Scheduling Tool #455,Engineering,Completed,24,2462524
+PRJ0094,Visual Analytics Suite Phase 2 #94,Operations,Completed,32,2453646
+PRJ0270,Energy Optimisation Platform #270,Data Science,In Progress,30,2448545
+PRJ0065,Predictive Maintenance - Q3 #65,Finance,Completed,25,2442747
+PRJ0276,Real-time Analytics Engine - Q4 #276,Marketing,In Progress,35,2435962
+PRJ0468,Geo-spatial Intelligence #468,Finance,Completed,36,2432468
+PRJ0211,Regulatory Compliance Tool Phase 3 #211,IT,Completed,32,2429344
+PRJ0288,Predictive Healthcare - Q3 #288,Finance,Completed,23,2423391
+PRJ0378,Data Platform Modernisation #378,HR,In Progress,37,2409743
+PRJ0436,Legacy System Decommission Phase 3 #436,Marketing,In Progress,27,2395391
+PRJ0333,Risk Assessment Framework Phase 2 #333,Operations,Completed,21,2383561
+PRJ0222,Fleet Management System Phase 3 #222,Procurement,Completed,30,2357771
+PRJ0008,Regulatory Compliance Tool Phase 3,Finance,In Progress,29,2356103
+PRJ0488,Crisis Response System Phase 2 #488,Engineering,In Progress,36,2351649
+PRJ0267,Smart City Infrastructure Phase 2 #267,Finance,On Hold,34,2351260
+PRJ0074,Data Platform Modernisation #74,Sales,Completed,28,2343561
+PRJ0189,Legacy System Decommission - Q1 #189,IT,Completed,26,2331632
+PRJ0364,Network Security Overhaul Phase 3 #364,Marketing,Completed,27,2325812
+PRJ0007,Mobile Workforce App,Finance,Completed,24,2322115
+PRJ0083,Visual Analytics Suite - Q2 #83,Engineering,Completed,28,2310345
+PRJ0041,Disaster Recovery Setup Phase 2,Operations,Completed,36,2309134
+PRJ0032,Executive Dashboard Phase 3,Marketing,Completed,31,2304826
+PRJ0277,Risk Assessment Framework Phase 2 #277,HR,Completed,31,2294073
+PRJ0086,ERP Consolidation Phase 3 #86,Data Science,Completed,30,2290310
+PRJ0314,Legacy System Decommission Phase 3 #314,Marketing,In Progress,27,2288724
+PRJ0465,Asset Tracking System - Q2 #465,Digital,Completed,32,2288510
+PRJ0285,Supply Chain Automation Phase 2 #285,IT,In Progress,32,2276929
+PRJ0269,HR System Upgrade Phase 3 #269,Data Science,Completed,25,2264653
+PRJ0363,AI Forecasting Engine Phase 3 #363,Engineering,On Hold,34,2251644
+PRJ0416,Asset Tracking System Phase 2 #416,IT,In Progress,23,2244538
+PRJ0249,Resource Scheduling Tool Phase 2 #249,Procurement,Completed,33,2225240
+PRJ0253,Customer Portal Redesign - Q2 #253,Data Science,Completed,27,2221740
+PRJ0114,AI Forecasting Engine - Q4 #114,Marketing,Completed,30,2220718
+PRJ0197,Smart Building System - Q2 #197,HR,In Progress,34,2217877
+PRJ0210,Citizen Services Portal - Q2 #210,Sales,Completed,43,2216525
+PRJ0251,Tax Automation Platform Phase 3 #251,Legal,Completed,21,2215726
+PRJ0101,Sentiment Analysis Engine Phase 2 #101,HR,In Progress,24,2200863
+PRJ0006,Risk Assessment Framework Phase 2,Sustainability,In Progress,26,2193348
+PRJ0110,Carbon Footprint Tracker - Q1 #110,Finance,In Progress,31,2187875
+PRJ0079,Data Platform Modernisation Phase 2 #79,HR,Completed,28,2183129
+PRJ0218,Sentiment Analysis Engine #218,Engineering,In Progress,27,2177062
+PRJ0123,Vendor Portal Phase 3 #123,Marketing,Completed,19,2176468
+PRJ0062,Resource Scheduling Tool #62,Digital,In Progress,33,2168235
+PRJ0113,Knowledge Management Portal #113,Engineering,In Progress,28,2167898
+PRJ0390,Compliance Monitoring Phase 2 #390,Data Science,In Progress,26,2161678
+PRJ0099,Mobile Workforce App Phase 2 #99,Finance,In Progress,34,2152804
+PRJ0138,Cloud Migration Phase 1 #138,Engineering,In Progress,40,2152669
+PRJ0350,Carbon Footprint Tracker #350,Sales,In Progress,31,2148810
+PRJ0119,Document Management System Phase 3 #119,HR,Completed,26,2145353
+PRJ0377,Internal Audit Digitisation - Q3 #377,IT,Completed,21,2144485
+PRJ0242,API Gateway Modernisation #242,Sales,Completed,24,2142241
+PRJ0343,Energy Optimisation Platform Phase 3 #343,Procurement,In Progress,29,2135142
+PRJ0187,Procurement Digitalisation #187,IT,In Progress,29,2124319
+PRJ0213,Identity Management Upgrade #213,Procurement,Completed,21,2123870
+PRJ0305,Customer Feedback Platform - Q2 #305,Digital,On Hold,24,2121638
+PRJ0018,Internal Audit Digitisation,HR,On Hold,28,2118192
+PRJ0500,Data Lake Implementation Phase 2 #500,Digital,Completed,35,2098125
+PRJ0238,Workflow Automation - Q3 #238,Procurement,Completed,28,2087052
+PRJ0418,MLOps Platform - Q1 #418,Marketing,Completed,26,2085364
+PRJ0015,Recommendation System - Q1,Engineering,In Progress,30,2081978
+PRJ0150,Mobile Workforce App - Q2 #150,Operations,Completed,34,2080757
+PRJ0148,Resource Scheduling Tool Phase 2 #148,Data Science,Completed,24,2077769
+PRJ0479,Cloud Migration Phase 1 - Q2 #479,HR,In Progress,30,2072687
+PRJ0370,Resource Scheduling Tool #370,Data Science,Completed,25,2069999
+PRJ0258,Data Platform Modernisation Phase 3 #258,Legal,Completed,29,2068645
+PRJ0131,Recommendation System - Q1 #131,Legal,Completed,29,2065364
+PRJ0499,Recommendation System - Q3 #499,Operations,In Progress,23,2050955
+PRJ0156,Internal Audit Digitisation Phase 2 #156,Legal,Completed,25,2042367
+PRJ0367,Employee Wellness App Phase 2 #367,Procurement,In Progress,33,2039960
+PRJ0057,Geo-spatial Intelligence - Q4 #57,Data Science,Completed,27,2038021
+PRJ0467,ERP Consolidation - Q2 #467,Legal,Completed,28,2036733
+PRJ0439,Document Management System #439,Sales,In Progress,26,2028150
+PRJ0290,Data Platform Modernisation - Q2 #290,Sales,Completed,23,2023109
+PRJ0121,Cloud Migration Phase 1 #121,Data Science,In Progress,24,2022094
+PRJ0225,Master Data Management #225,Finance,On Hold,31,2020065
+PRJ0039,Predictive Healthcare Phase 2,IT,Completed,33,2019134
+PRJ0153,Customer Portal Redesign #153,IT,On Hold,30,2008031
+PRJ0349,Network Security Overhaul Phase 2 #349,Procurement,In Progress,26,2003627
+PRJ0478,Predictive Healthcare Phase 3 #478,Marketing,In Progress,24,2003347
+PRJ0069,API Gateway Modernisation #69,Sales,Completed,28,1986187
+PRJ0431,Smart Building System - Q4 #431,Engineering,On Hold,20,1985865
+PRJ0205,Internal Audit Digitisation - Q4 #205,Marketing,On Hold,25,1982259
+PRJ0200,Customer Portal Redesign - Q3 #200,Marketing,In Progress,28,1980623
+PRJ0256,Customer Portal Redesign Phase 2 #256,Sustainability,In Progress,35,1965613
+PRJ0266,Tax Automation Platform - Q3 #266,Sustainability,In Progress,37,1965137
+PRJ0365,Recommendation System - Q1 #365,Operations,Completed,24,1959474
+PRJ0279,Performance Analytics - Q1 #279,Finance,In Progress,25,1957972
+PRJ0196,Citizen Services Portal - Q4 #196,IT,In Progress,23,1957169
+PRJ0048,Asset Tracking System Phase 3,Procurement,In Progress,23,1956761
+PRJ0059,Smart Building System #59,Finance,Completed,22,1955957
+PRJ0003,ERP Consolidation Phase 2,Legal,Completed,24,1951006
+PRJ0278,Data Platform Modernisation #278,Digital,Completed,36,1940662
+PRJ0493,Workflow Automation #493,Digital,In Progress,30,1937239
+PRJ0327,AI Forecasting Engine Phase 3 #327,IT,Completed,31,1936944
+PRJ0458,Workflow Automation Phase 3 #458,Legal,In Progress,24,1919186
+PRJ0421,Contract Lifecycle Management Phase 2 #421,Procurement,Completed,26,1909433
+PRJ0312,Real-time Analytics Engine Phase 3 #312,Sales,Completed,23,1895939
+PRJ0417,Regulatory Compliance Tool Phase 2 #417,Data Science,In Progress,27,1893682
+PRJ0047,Quality Assurance Automation Phase 3,Marketing,In Progress,22,1891583
+PRJ0183,Asset Tracking System - Q4 #183,Procurement,In Progress,28,1885905
+PRJ0221,Crisis Response System - Q1 #221,Marketing,On Hold,24,1884109
+PRJ0402,Recommendation System #402,Marketing,Completed,24,1874985
+PRJ0219,API Gateway Modernisation Phase 2 #219,Legal,In Progress,20,1874807
+PRJ0106,Recommendation System #106,Legal,In Progress,29,1873820
+PRJ0244,Internal Audit Digitisation Phase 3 #244,Sustainability,In Progress,27,1854214
+PRJ0093,Tax Automation Platform Phase 3 #93,IT,In Progress,29,1852123
+PRJ0446,Identity Management Upgrade - Q4 #446,Marketing,On Hold,22,1852085
+PRJ0361,Data Lake Implementation - Q3 #361,Operations,Completed,31,1847380
+PRJ0118,Identity Management Upgrade Phase 3 #118,IT,In Progress,16,1845113
+PRJ0459,Tax Automation Platform Phase 3 #459,Legal,In Progress,31,1838090
+PRJ0090,Risk Assessment Framework Phase 3 #90,Marketing,In Progress,29,1827771
+PRJ0471,Asset Tracking System Phase 3 #471,IT,Completed,28,1810394
+PRJ0324,Performance Analytics #324,Finance,Completed,19,1805413
+PRJ0252,Digital Payments Integration #252,Engineering,In Progress,28,1803357
+PRJ0423,Fleet Management System - Q1 #423,Legal,In Progress,28,1802787
+PRJ0414,API Gateway Modernisation Phase 3 #414,Finance,Completed,29,1793994
+PRJ0109,IoT Sensor Network Phase 2 #109,Sales,Completed,17,1789532
+PRJ0098,Regulatory Compliance Tool - Q4 #98,Operations,Completed,35,1788804
+PRJ0097,Regulatory Compliance Tool #97,IT,Completed,29,1786163
+PRJ0391,Smart Building System Phase 2 #391,HR,On Hold,33,1781275
+PRJ0125,Executive Dashboard Phase 3 #125,Operations,On Hold,22,1780353
+PRJ0157,IoT Sensor Network Phase 2 #157,Procurement,In Progress,26,1778971
+PRJ0136,Knowledge Management Portal #136,IT,In Progress,28,1776355
+PRJ0338,Procurement Digitalisation - Q3 #338,IT,In Progress,30,1774935
+PRJ0175,Master Data Management Phase 2 #175,Sustainability,Completed,25,1759219
+PRJ0373,Internal Audit Digitisation Phase 2 #373,Engineering,In Progress,32,1756987
+PRJ0078,Employee Wellness App - Q3 #78,Sustainability,Completed,27,1755149
+PRJ0075,Real-time Analytics Engine #75,Marketing,Completed,32,1754861
+PRJ0085,Internal Audit Digitisation - Q3 #85,Finance,Completed,25,1741682
+PRJ0172,Master Data Management #172,Data Science,In Progress,27,1729206
+PRJ0476,Legacy System Decommission Phase 2 #476,Procurement,In Progress,33,1717450
+PRJ0130,Data Platform Modernisation #130,HR,Completed,25,1712139
+PRJ0331,Master Data Management #331,IT,In Progress,31,1704611
+PRJ0044,IoT Sensor Network Phase 3,Legal,Completed,17,1700926
+PRJ0126,Employee Wellness App - Q4 #126,Procurement,In Progress,31,1697775
+PRJ0415,Disaster Recovery Setup - Q4 #415,Sales,In Progress,29,1693918
+PRJ0443,Risk Assessment Framework #443,HR,Completed,29,1692373
+PRJ0186,Mobile Workforce App Phase 2 #186,Marketing,Completed,26,1689844
+PRJ0234,Procurement Digitalisation Phase 3 #234,Sales,Completed,32,1683666
+PRJ0454,Smart Building System Phase 3 #454,Engineering,Completed,27,1674034
+PRJ0056,Disaster Recovery Setup Phase 3 #56,Data Science,Completed,37,1661754
+PRJ0040,Data Platform Modernisation - Q2,Digital,In Progress,31,1657268
+PRJ0452,Citizen Services Portal - Q4 #452,Legal,Completed,18,1650323
+PRJ0170,Data Platform Modernisation - Q2 #170,Marketing,Completed,30,1645724
+PRJ0181,Knowledge Management Portal - Q4 #181,HR,In Progress,31,1640403
+PRJ0319,Smart City Infrastructure Phase 3 #319,Marketing,Completed,27,1639170
+PRJ0388,Geo-spatial Intelligence #388,Legal,In Progress,30,1632497
+PRJ0461,Data Platform Modernisation Phase 3 #461,Legal,On Hold,32,1627569
+PRJ0195,Regulatory Compliance Tool Phase 2 #195,Engineering,Completed,22,1625073
+PRJ0082,Performance Analytics Phase 2 #82,Operations,Completed,26,1621461
+PRJ0282,Compliance Monitoring Phase 2 #282,Data Science,Completed,27,1618524
+PRJ0369,Resource Scheduling Tool Phase 2 #369,Procurement,In Progress,25,1615006
+PRJ0298,Executive Dashboard Phase 3 #298,Operations,In Progress,27,1611000
+PRJ0005,Mobile Workforce App - Q4,Finance,In Progress,33,1604776
+PRJ0140,IoT Sensor Network Phase 2 #140,Digital,In Progress,24,1603957
+PRJ0316,Knowledge Management Portal Phase 2 #316,Digital,Completed,27,1602091
+PRJ0445,AI Forecasting Engine - Q3 #445,Marketing,In Progress,33,1594012
+PRJ0265,Employee Wellness App Phase 3 #265,Sales,In Progress,26,1583713
+PRJ0002,Tax Automation Platform - Q2,Marketing,In Progress,29,1577652
+PRJ0248,Executive Dashboard Phase 2 #248,Digital,Completed,21,1574127
+PRJ0246,IoT Sensor Network - Q1 #246,Data Science,Completed,29,1573434
+PRJ0451,Energy Optimisation Platform #451,Marketing,Completed,33,1568651
+PRJ0444,ERP Consolidation Phase 2 #444,Data Science,On Hold,32,1566480
+PRJ0383,Internal Audit Digitisation Phase 3 #383,Sustainability,In Progress,26,1564508
+PRJ0116,Citizen Services Portal - Q1 #116,Sales,Completed,27,1561687
+PRJ0386,Compliance Monitoring Phase 2 #386,Data Science,In Progress,29,1555593
+PRJ0155,Internal Audit Digitisation Phase 2 #155,IT,Completed,32,1548666
+PRJ0088,Quality Assurance Automation #88,Engineering,Completed,28,1540583
+PRJ0482,Risk Assessment Framework Phase 2 #482,Procurement,Completed,33,1539592
+PRJ0188,Internal Audit Digitisation Phase 3 #188,Sales,Completed,30,1518780
+PRJ0178,Internal Audit Digitisation #178,IT,In Progress,31,1518749
+PRJ0133,Network Security Overhaul #133,Sustainability,Completed,26,1516620
+PRJ0303,AI Forecasting Engine - Q3 #303,Procurement,Completed,18,1515352
+PRJ0230,Recommendation System Phase 2 #230,Finance,In Progress,19,1511080
+PRJ0011,Identity Management Upgrade - Q3,Marketing,Completed,26,1503387
+PRJ0405,Customer Portal Redesign - Q2 #405,Finance,In Progress,27,1501825
+PRJ0424,Geo-spatial Intelligence Phase 3 #424,Operations,Completed,25,1491742
+PRJ0021,Disaster Recovery Setup Phase 3,Procurement,In Progress,32,1489615
+PRJ0419,Data Platform Modernisation Phase 2 #419,Procurement,In Progress,27,1484219
+PRJ0470,Customer Feedback Platform Phase 2 #470,Digital,Completed,32,1481460
+PRJ0091,Contract Lifecycle Management - Q1 #91,Marketing,Completed,27,1478233
+PRJ0284,Employee Wellness App Phase 2 #284,Operations,Completed,20,1478054
+PRJ0463,Tax Automation Platform Phase 2 #463,Engineering,In Progress,30,1477748
+PRJ0054,Risk Assessment Framework Phase 3 #54,Sustainability,In Progress,20,1475195
+PRJ0469,Procurement Digitalisation - Q3 #469,Legal,In Progress,18,1468768
+PRJ0226,Performance Analytics #226,Finance,Completed,26,1462352
+PRJ0464,Risk Assessment Framework #464,HR,In Progress,27,1459442
+PRJ0004,Employee Wellness App - Q1,Marketing,Completed,24,1452147
+PRJ0231,HR System Upgrade - Q4 #231,Operations,Completed,24,1450536
+PRJ0176,Executive Dashboard #176,Engineering,In Progress,29,1440690
+PRJ0034,Cloud Migration Phase 1 - Q4,HR,Completed,25,1440361
+PRJ0146,Legacy System Decommission #146,Operations,On Hold,28,1436126
+PRJ0292,Executive Dashboard Phase 3 #292,HR,In Progress,30,1427579
+PRJ0275,Master Data Management #275,Sustainability,Completed,25,1424731
+PRJ0145,Internal Audit Digitisation #145,Digital,In Progress,22,1423672
+PRJ0260,Sentiment Analysis Engine #260,HR,In Progress,14,1422130
+PRJ0027,Resource Scheduling Tool Phase 3,Engineering,Completed,30,1417898
+PRJ0306,Cloud Migration Phase 1 Phase 2 #306,Marketing,In Progress,27,1411697
+PRJ0009,IoT Sensor Network,Digital,In Progress,28,1407973
+PRJ0449,Visual Analytics Suite #449,Finance,In Progress,26,1399512
+PRJ0163,Vendor Portal Phase 2 #163,Sales,Completed,22,1390982
+PRJ0179,Energy Optimisation Platform Phase 3 #179,Finance,Completed,27,1389025
+PRJ0031,MLOps Platform,Operations,Completed,21,1382581
+PRJ0368,Energy Optimisation Platform Phase 2 #368,Marketing,In Progress,28,1368711
+PRJ0037,Predictive Healthcare - Q4,Legal,In Progress,24,1367904
+PRJ0182,Master Data Management #182,Finance,Completed,25,1364791
+PRJ0297,Vendor Portal - Q3 #297,Operations,In Progress,24,1361252
+PRJ0492,Supply Chain Automation Phase 2 #492,Engineering,In Progress,28,1353439
+PRJ0489,Identity Management Upgrade Phase 2 #489,IT,In Progress,31,1348697
+PRJ0100,Compliance Monitoring #100,HR,Completed,17,1347847
+PRJ0336,Compliance Monitoring Phase 2 #336,Digital,Completed,24,1347468
+PRJ0013,HR System Upgrade Phase 3,Legal,In Progress,23,1343518
+PRJ0160,Supply Chain Automation #160,Legal,Completed,33,1334525
+PRJ0024,Vendor Portal Phase 3,Sales,Completed,24,1331316
+PRJ0401,Procurement Digitalisation Phase 2 #401,Procurement,Completed,24,1322124
+PRJ0339,Customer Feedback Platform #339,Engineering,On Hold,22,1319863
+PRJ0209,Quality Assurance Automation Phase 3 #209,Finance,In Progress,28,1317688
+PRJ0120,Master Data Management Phase 2 #120,Legal,In Progress,28,1316934
+PRJ0396,Knowledge Management Portal #396,Legal,Completed,24,1315511
+PRJ0103,Compliance Monitoring #103,Sustainability,Completed,24,1311178
+PRJ0223,Knowledge Management Portal #223,Finance,In Progress,19,1309217
+PRJ0315,Recommendation System Phase 2 #315,Digital,Completed,25,1308995
+PRJ0268,Performance Analytics #268,Digital,Completed,28,1305522
+PRJ0174,Tax Automation Platform Phase 2 #174,Finance,In Progress,37,1303840
+PRJ0158,Regulatory Compliance Tool - Q1 #158,Legal,In Progress,21,1298212
+PRJ0412,IoT Sensor Network Phase 3 #412,Finance,In Progress,25,1295873
+PRJ0308,Legacy System Decommission Phase 3 #308,Sales,Completed,28,1288410
+PRJ0287,Vendor Portal #287,Finance,Completed,31,1287557
+PRJ0430,Crisis Response System - Q2 #430,Legal,Completed,19,1285861
+PRJ0104,Smart Building System Phase 2 #104,Sustainability,On Hold,22,1285584
+PRJ0207,ERP Consolidation Phase 2 #207,Finance,On Hold,22,1281631
+PRJ0280,API Gateway Modernisation #280,Legal,Completed,23,1275771
+PRJ0237,Predictive Maintenance - Q3 #237,Data Science,In Progress,16,1274065
+PRJ0354,Executive Dashboard Phase 3 #354,IT,Completed,26,1273475
+PRJ0273,Citizen Services Portal Phase 2 #273,Operations,In Progress,26,1271761
+PRJ0132,Mobile Workforce App - Q2 #132,IT,Completed,34,1269426
+PRJ0073,Fleet Management System Phase 3 #73,Digital,In Progress,23,1267410
+PRJ0441,Real-time Analytics Engine Phase 3 #441,Legal,In Progress,27,1257593
+PRJ0433,Sentiment Analysis Engine Phase 2 #433,HR,On Hold,29,1256537
+PRJ0406,Legacy System Decommission - Q2 #406,Procurement,In Progress,31,1251412
+PRJ0025,Internal Audit Digitisation,Operations,Completed,25,1248352
+PRJ0435,Energy Optimisation Platform Phase 2 #435,Digital,Completed,28,1246750
+PRJ0321,Recommendation System - Q3 #321,Engineering,In Progress,25,1246057
+PRJ0261,Identity Management Upgrade - Q3 #261,Sustainability,Completed,26,1239732
+PRJ0330,Tax Automation Platform #330,HR,Completed,27,1238444
+PRJ0152,Regulatory Compliance Tool Phase 3 #152,Marketing,In Progress,23,1237128
+PRJ0203,Predictive Maintenance - Q3 #203,Finance,Completed,29,1236444
+PRJ0166,Risk Assessment Framework - Q4 #166,Digital,Completed,29,1234215
+PRJ0294,Executive Dashboard #294,Engineering,Completed,25,1232931
+PRJ0096,Workflow Automation Phase 2 #96,HR,Completed,26,1214695
+PRJ0255,Tax Automation Platform Phase 2 #255,Sales,Completed,23,1212186
+PRJ0232,Cloud Migration Phase 1 Phase 3 #232,Procurement,Completed,19,1208503
+PRJ0198,Tax Automation Platform Phase 3 #198,HR,In Progress,26,1208377
+PRJ0299,Predictive Maintenance Phase 2 #299,Sales,Completed,29,1205102
+PRJ0296,HR System Upgrade Phase 2 #296,Legal,In Progress,26,1202227
+PRJ0191,Legacy System Decommission Phase 3 #191,Operations,Completed,31,1198344
+PRJ0134,Employee Wellness App - Q1 #134,Procurement,In Progress,19,1197023
+PRJ0243,Vendor Portal - Q1 #243,Procurement,Completed,26,1193801
+PRJ0108,Recommendation System Phase 2 #108,Digital,In Progress,18,1192208
+PRJ0058,AI Forecasting Engine - Q2 #58,Finance,Completed,26,1192085
+PRJ0149,Workflow Automation #149,Legal,In Progress,28,1181211
+PRJ0052,Vendor Portal #52,HR,In Progress,27,1177041
+PRJ0050,Executive Dashboard Phase 3,HR,Completed,27,1171363
+PRJ0129,MLOps Platform - Q2 #129,Finance,Completed,23,1170972
+PRJ0307,Data Lake Implementation - Q4 #307,Data Science,On Hold,35,1170254
+PRJ0167,Compliance Monitoring Phase 2 #167,Operations,Completed,26,1166487
+PRJ0372,Employee Wellness App Phase 3 #372,HR,In Progress,25,1146035
+PRJ0045,Geo-spatial Intelligence Phase 2,HR,Completed,22,1140914
+PRJ0310,Compliance Monitoring Phase 3 #310,IT,In Progress,39,1138175
+PRJ0475,API Gateway Modernisation Phase 2 #475,Digital,On Hold,28,1135944
+PRJ0434,Cloud Migration Phase 1 #434,Marketing,In Progress,31,1124949
+PRJ0376,Document Management System Phase 2 #376,Operations,Completed,26,1123086
+PRJ0484,Contract Lifecycle Management #484,Procurement,Completed,26,1117615
+PRJ0014,Tax Automation Platform Phase 3,Legal,In Progress,23,1116720
+PRJ0274,Vendor Portal Phase 2 #274,Operations,In Progress,30,1115188
+PRJ0474,Compliance Monitoring - Q2 #474,Sustainability,Completed,23,1114874
+PRJ0055,Supply Chain Automation Phase 2 #55,Operations,In Progress,18,1113259
+PRJ0235,Smart Building System Phase 3 #235,Sustainability,Completed,28,1094770
+PRJ0064,Risk Assessment Framework Phase 2 #64,Marketing,Completed,30,1094331
+PRJ0204,Predictive Maintenance Phase 2 #204,Digital,Completed,25,1092524
+PRJ0380,Real-time Analytics Engine Phase 3 #380,Finance,In Progress,15,1090249
+PRJ0286,Carbon Footprint Tracker Phase 2 #286,Digital,In Progress,22,1087864
+PRJ0413,Master Data Management #413,Data Science,Completed,23,1083073
+PRJ0227,Fleet Management System #227,Digital,In Progress,26,1081142
+PRJ0340,AI Forecasting Engine #340,Data Science,On Hold,26,1065433
+PRJ0425,Carbon Footprint Tracker #425,IT,Completed,29,1063311
+PRJ0072,Knowledge Management Portal #72,IT,Completed,28,1053806
+PRJ0046,Quality Assurance Automation - Q1,Procurement,Completed,26,1050019
+PRJ0480,Employee Wellness App - Q3 #480,Digital,In Progress,27,1049550
+PRJ0228,MLOps Platform Phase 3 #228,Engineering,Completed,25,1048284
+PRJ0239,Smart City Infrastructure - Q1 #239,IT,On Hold,22,1047811
+PRJ0357,Energy Optimisation Platform - Q3 #357,Engineering,In Progress,22,1046722
+PRJ0192,Legacy System Decommission #192,Engineering,In Progress,23,1035742
+PRJ0448,Quality Assurance Automation - Q2 #448,Procurement,Completed,23,1032366
+PRJ0384,Identity Management Upgrade #384,HR,In Progress,21,1026779
+PRJ0084,Employee Wellness App Phase 2 #84,Operations,In Progress,25,1024971
+PRJ0220,Asset Tracking System Phase 2 #220,Operations,Completed,30,1021918
+PRJ0077,Predictive Healthcare #77,Sales,Completed,27,1015972
+PRJ0026,Asset Tracking System Phase 2,Legal,In Progress,19,1015175
+PRJ0347,Regulatory Compliance Tool Phase 3 #347,IT,Completed,20,1010560
+PRJ0428,Identity Management Upgrade - Q1 #428,Legal,Completed,31,1008932
+PRJ0254,Supply Chain Automation #254,Sustainability,Completed,21,1007696
+PRJ0127,Identity Management Upgrade #127,Procurement,In Progress,25,1005916
+PRJ0115,AI Forecasting Engine Phase 2 #115,HR,Completed,24,1001145
+PRJ0263,Digital Payments Integration Phase 3 #263,Finance,In Progress,30,995538
+PRJ0360,Risk Assessment Framework #360,Legal,Completed,19,983953
+PRJ0067,Data Platform Modernisation Phase 2 #67,Sales,Completed,22,983475
+PRJ0472,Data Platform Modernisation #472,Engineering,In Progress,23,981195
+PRJ0320,Resource Scheduling Tool - Q3 #320,Sustainability,On Hold,33,979931
+PRJ0010,Energy Optimisation Platform - Q4,Procurement,In Progress,26,977862
+PRJ0049,Quality Assurance Automation Phase 2,Marketing,In Progress,27,973324
+PRJ0301,Predictive Maintenance - Q1 #301,Digital,In Progress,22,968849
+PRJ0313,Citizen Services Portal Phase 2 #313,Engineering,In Progress,19,965216
+PRJ0250,Data Platform Modernisation - Q4 #250,HR,Completed,22,964362
+PRJ0283,Regulatory Compliance Tool #283,Data Science,In Progress,25,958097
+PRJ0241,Crisis Response System - Q1 #241,HR,Completed,26,955150
+PRJ0456,Knowledge Management Portal - Q2 #456,Digital,Completed,24,950346
+PRJ0483,Sentiment Analysis Engine Phase 2 #483,Engineering,In Progress,26,949694
+PRJ0353,Knowledge Management Portal - Q1 #353,Digital,In Progress,28,949395
+PRJ0143,Regulatory Compliance Tool #143,HR,In Progress,26,929184
+PRJ0038,Workflow Automation,HR,Completed,25,910830
+PRJ0001,MLOps Platform,Sustainability,Completed,16,906215
+PRJ0112,Performance Analytics #112,Sales,In Progress,28,897450
+PRJ0335,ERP Consolidation Phase 3 #335,Sales,In Progress,23,894450
+PRJ0366,Performance Analytics Phase 3 #366,Digital,Completed,26,893829
+PRJ0389,Cloud Migration Phase 1 - Q3 #389,Finance,In Progress,23,887866
+PRJ0020,Mobile Workforce App,Sustainability,In Progress,32,886999
+PRJ0236,Internal Audit Digitisation #236,Sustainability,Completed,25,882088
+PRJ0212,Identity Management Upgrade #212,Sales,Completed,23,878779
+PRJ0022,Smart Building System - Q4,Finance,In Progress,28,876349
+PRJ0111,Geo-spatial Intelligence Phase 2 #111,Sustainability,In Progress,30,874403
+PRJ0154,Quality Assurance Automation Phase 3 #154,Sustainability,In Progress,18,862804
+PRJ0485,Cloud Migration Phase 1 Phase 3 #485,Procurement,On Hold,22,854781
+PRJ0398,Procurement Digitalisation Phase 3 #398,Operations,In Progress,27,854424
+PRJ0105,Contract Lifecycle Management - Q4 #105,HR,In Progress,27,853383
+PRJ0407,Performance Analytics #407,Sustainability,Completed,15,843776
+PRJ0318,Mobile Workforce App #318,IT,In Progress,24,831947
+PRJ0432,Compliance Monitoring #432,Operations,In Progress,17,808539
+PRJ0141,Customer Feedback Platform #141,HR,Completed,24,798853
+PRJ0076,Customer Portal Redesign #76,Sustainability,Completed,28,796551
+PRJ0486,Recommendation System - Q4 #486,Operations,In Progress,23,791487
+PRJ0071,Recommendation System Phase 2 #71,IT,Completed,25,789717
+PRJ0161,AI Forecasting Engine #161,Legal,In Progress,19,789682
+PRJ0351,Recommendation System Phase 3 #351,HR,On Hold,28,781175
+PRJ0293,Real-time Analytics Engine #293,Digital,In Progress,23,762633
+PRJ0122,Employee Wellness App #122,Operations,In Progress,28,754915
+PRJ0491,Resource Scheduling Tool - Q4 #491,HR,Completed,23,752263
+PRJ0068,MLOps Platform Phase 2 #68,Marketing,Completed,22,750359
+PRJ0245,Tax Automation Platform Phase 3 #245,Finance,Completed,19,738511
+PRJ0422,ERP Consolidation - Q2 #422,Sales,In Progress,29,731506
+PRJ0382,Tax Automation Platform - Q1 #382,Digital,In Progress,26,731042
+PRJ0259,Geo-spatial Intelligence Phase 2 #259,Marketing,Completed,25,725720
+PRJ0229,Document Management System - Q4 #229,Legal,In Progress,29,723748
+PRJ0477,Fleet Management System Phase 2 #477,IT,Completed,19,707720
+PRJ0295,Master Data Management Phase 3 #295,HR,In Progress,23,704164
+PRJ0408,Supply Chain Automation Phase 3 #408,Legal,Completed,21,701493
+PRJ0328,Geo-spatial Intelligence Phase 3 #328,Sustainability,Completed,23,694176
+PRJ0216,Knowledge Management Portal Phase 2 #216,Engineering,Completed,22,687756
+PRJ0201,Customer Feedback Platform Phase 3 #201,Sales,In Progress,18,681782
+PRJ0193,Sentiment Analysis Engine #193,Procurement,Completed,23,681577
+PRJ0453,Compliance Monitoring - Q2 #453,Procurement,In Progress,21,681056
+PRJ0142,Mobile Workforce App - Q4 #142,Digital,On Hold,22,677359
+PRJ0224,Risk Assessment Framework - Q2 #224,Digital,Completed,25,669063
+PRJ0291,Predictive Maintenance Phase 3 #291,Digital,Completed,24,667582
+PRJ0289,Disaster Recovery Setup Phase 3 #289,Data Science,Completed,22,659005
+PRJ0359,Smart City Infrastructure Phase 2 #359,IT,In Progress,24,648448
+PRJ0151,Performance Analytics Phase 2 #151,Sales,Completed,19,638403
+PRJ0300,Tax Automation Platform Phase 3 #300,Sales,Completed,25,627901
+PRJ0281,Compliance Monitoring - Q3 #281,IT,In Progress,15,602596
+PRJ0262,Data Lake Implementation Phase 3 #262,Sales,In Progress,27,595039
+PRJ0438,AI Forecasting Engine - Q2 #438,Procurement,Completed,24,591785
+PRJ0199,Predictive Maintenance - Q2 #199,Marketing,Completed,27,591055
+PRJ0462,Predictive Maintenance Phase 2 #462,Finance,Completed,20,587702
+PRJ0497,Fleet Management System #497,Sales,On Hold,24,584084
+PRJ0117,AI Forecasting Engine - Q3 #117,Engineering,Completed,16,575020
+PRJ0107,Risk Assessment Framework - Q2 #107,Legal,Completed,19,565945
+PRJ0345,Predictive Healthcare #345,Digital,In Progress,19,560607
+PRJ0271,Geo-spatial Intelligence Phase 3 #271,Operations,In Progress,17,558991
+PRJ0264,Energy Optimisation Platform Phase 2 #264,Procurement,In Progress,18,558730
+PRJ0185,Customer Portal Redesign Phase 3 #185,Data Science,In Progress,20,554525
+PRJ0427,Master Data Management #427,Engineering,On Hold,21,523422
+PRJ0053,Predictive Healthcare Phase 3 #53,Digital,Completed,22,510018
+PRJ0395,Smart Building System Phase 3 #395,Operations,In Progress,30,508395
+PRJ0387,MLOps Platform Phase 3 #387,Sales,Completed,30,500761
+PRJ0393,Carbon Footprint Tracker #393,Operations,Completed,17,494974
+PRJ0081,AI Forecasting Engine #81,IT,Completed,22,488862
+PRJ0016,Energy Optimisation Platform - Q4,Engineering,In Progress,20,483062
+PRJ0379,Data Lake Implementation #379,Sales,Completed,19,475539
+PRJ0346,Contract Lifecycle Management Phase 3 #346,Marketing,Completed,18,395803
+PRJ0159,Recommendation System #159,Digital,In Progress,20,383875

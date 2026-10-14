@@ -1,0 +1,20 @@
+rule_name,column,dimension,condition,checked_rows,passed_rows,failed_rows,score_pct,threshold_pct,status,details,rule_id,tablename
+project_id must be present,project_id,completeness,not_null; score >= 90%,500,500,0,100.0,90.0,PASS,Total rows: 500; excluded rows: 0,R001,projects
+project_name must be present,project_name,completeness,not_null; score >= 90%,500,500,0,100.0,90.0,PASS,Total rows: 500; excluded rows: 0,R002,projects
+department must be present,department,completeness,not_null; score >= 90%,500,500,0,100.0,90.0,PASS,Total rows: 500; excluded rows: 0,R003,projects
+status must be present,status,completeness,not_null; score >= 90%,500,500,0,100.0,90.0,PASS,Total rows: 500; excluded rows: 0,R004,projects
+start_date must be present,start_date,completeness,not_null; score >= 90%,500,435,65,87.0,90.0,FAIL,Total rows: 500; excluded rows: 0,R005,projects
+end_date must be present,end_date,completeness,not_null; score >= 90%,500,214,286,42.8,90.0,FAIL,Total rows: 500; excluded rows: 0,R006,projects
+budget must be present,budget,completeness,not_null; score >= 90%,500,468,32,93.6,90.0,PASS,Total rows: 500; excluded rows: 0,R007,projects
+actual_cost must be present,actual_cost,completeness,not_null; score >= 90%,500,440,60,88.0,90.0,FAIL,Total rows: 500; excluded rows: 0,R008,projects
+project_manager_id must be present,project_manager_id,completeness,not_null; score >= 90%,500,500,0,100.0,90.0,PASS,Total rows: 500; excluded rows: 0,R009,projects
+priority must be present,priority,completeness,not_null; score >= 90%,500,500,0,100.0,90.0,PASS,Total rows: 500; excluded rows: 0,R010,projects
+region must be present,region,completeness,not_null; score >= 90%,500,500,0,100.0,90.0,PASS,Total rows: 500; excluded rows: 0,R011,projects
+Key must be present and unique,project_id,uniqueness,unique,500,500,0,100.0,100.0,PASS,Total rows: 500; excluded rows: 0,R012,projects
+budget within allowed range,budget,numeric_validity,between 0 and 10000000; allow_null,468,468,0,100.0,100.0,PASS,Total rows: 500; excluded rows: 32,R013,projects
+actual_cost within allowed range,actual_cost,numeric_validity,between 0 and 10000000; allow_null,440,440,0,100.0,100.0,PASS,Total rows: 500; excluded rows: 60,R014,projects
+start_date must be a valid date,start_date,date_validity,not_future; allow_null,435,435,0,100.0,100.0,PASS,Total rows: 500; excluded rows: 65,R015,projects
+end_date must be a valid date,end_date,date_validity,valid_date; allow_null,214,214,0,100.0,100.0,PASS,Total rows: 500; excluded rows: 286,R016,projects
+Project dates in order,start_date,consistency,before end_date; allow_null,214,214,0,100.0,100.0,PASS,Total rows: 500; excluded rows: 286,R017,projects
+actual_cost cannot be negative,actual_cost,consistency,non_negative; allow_null,440,440,0,100.0,100.0,PASS,Total rows: 500; excluded rows: 60,R018,projects
+project_manager_id must reference an existing record,project_manager_id,referential_integrity,exists in employees.employee_id; allow_null,500,500,0,100.0,100.0,PASS,Total rows: 500; excluded rows: 0,R019,projects

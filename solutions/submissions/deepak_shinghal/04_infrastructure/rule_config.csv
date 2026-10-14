@@ -1,0 +1,80 @@
+rule_id,rule_name,tablename,column,dimension,condition
+R001,project_id must be present,projects,project_id,completeness,not_null; score >= 90%
+R002,project_name must be present,projects,project_name,completeness,not_null; score >= 90%
+R003,department must be present,projects,department,completeness,not_null; score >= 90%
+R004,status must be present,projects,status,completeness,not_null; score >= 90%
+R005,start_date must be present,projects,start_date,completeness,not_null; score >= 90%
+R006,end_date must be present,projects,end_date,completeness,not_null; score >= 90%
+R007,budget must be present,projects,budget,completeness,not_null; score >= 90%
+R008,actual_cost must be present,projects,actual_cost,completeness,not_null; score >= 90%
+R009,project_manager_id must be present,projects,project_manager_id,completeness,not_null; score >= 90%
+R010,priority must be present,projects,priority,completeness,not_null; score >= 90%
+R011,region must be present,projects,region,completeness,not_null; score >= 90%
+R012,Key must be present and unique,projects,project_id,uniqueness,unique
+R013,budget within allowed range,projects,budget,numeric_validity,between 0 and 10000000; allow_null
+R014,actual_cost within allowed range,projects,actual_cost,numeric_validity,between 0 and 10000000; allow_null
+R015,start_date must be a valid date,projects,start_date,date_validity,not_future; allow_null
+R016,end_date must be a valid date,projects,end_date,date_validity,valid_date; allow_null
+R017,Project dates in order,projects,start_date,consistency,before end_date; allow_null
+R018,actual_cost cannot be negative,projects,actual_cost,consistency,non_negative; allow_null
+R019,project_manager_id must reference an existing record,projects,project_manager_id,referential_integrity,exists in employees.employee_id; allow_null
+R020,employee_id must be present,employees,employee_id,completeness,not_null; score >= 85%
+R021,full_name must be present,employees,full_name,completeness,not_null; score >= 85%
+R022,email must be present,employees,email,completeness,not_null; score >= 85%
+R023,department must be present,employees,department,completeness,not_null; score >= 85%
+R024,role must be present,employees,role,completeness,not_null; score >= 85%
+R025,level must be present,employees,level,completeness,not_null; score >= 85%
+R026,hire_date must be present,employees,hire_date,completeness,not_null; score >= 85%
+R027,salary must be present,employees,salary,completeness,not_null; score >= 85%
+R028,manager_id must be present,employees,manager_id,completeness,not_null; score >= 85%
+R029,region must be present,employees,region,completeness,not_null; score >= 85%
+R030,status must be present,employees,status,completeness,not_null; score >= 85%
+R031,years_experience must be present,employees,years_experience,completeness,not_null; score >= 85%
+R032,Key must be present and unique,employees,employee_id,uniqueness,unique
+R033,salary within allowed range,employees,salary,numeric_validity,between 10000 and 100000; allow_null
+R034,years_experience within allowed range,employees,years_experience,numeric_validity,between 0 and 50; allow_null
+R035,hire_date must be a valid date,employees,hire_date,date_validity,not_future; allow_null
+R036,Junior salary band,employees,salary,consistency,between 12000 and 17000 when level = Junior
+R037,Mid salary band,employees,salary,consistency,between 17000 and 24000 when level = Mid
+R038,Senior salary band,employees,salary,consistency,between 25000 and 36000 when level = Senior
+R039,Lead salary band,employees,salary,consistency,between 38000 and 50000 when level = Lead
+R040,Director salary band,employees,salary,consistency,between 50000 and 70000 when level = Director
+R041,Senior role matches level,employees,level,consistency,equals Senior when role starts_with Senior
+R042,Lead role matches level,employees,level,consistency,equals Lead when role starts_with Lead
+R043,manager_id must reference an existing record,employees,manager_id,referential_integrity,exists in employees.employee_id; allow_null
+R044,transaction_id must be present,transactions,transaction_id,completeness,not_null; score >= 90%
+R045,project_id must be present,transactions,project_id,completeness,not_null; score >= 90%
+R046,vendor_id must be present,transactions,vendor_id,completeness,not_null; score >= 90%
+R047,vendor_name must be present,transactions,vendor_name,completeness,not_null; score >= 90%
+R048,category must be present,transactions,category,completeness,not_null; score >= 90%
+R049,amount must be present,transactions,amount,completeness,not_null; score >= 90%
+R050,currency must be present,transactions,currency,completeness,not_null; score >= 90%
+R051,transaction_date must be present,transactions,transaction_date,completeness,not_null; score >= 90%
+R052,approved_by must be present,transactions,approved_by,completeness,not_null; score >= 90%
+R053,payment_status must be present,transactions,payment_status,completeness,not_null; score >= 90%
+R054,invoice_ref must be present,transactions,invoice_ref,completeness,not_null; score >= 90%
+R055,notes must be present,transactions,notes,completeness,not_null; score >= 90%
+R056,Key must be present and unique,transactions,transaction_id,uniqueness,unique
+R057,amount within allowed range,transactions,amount,numeric_validity,between 0 and 10000000; allow_null
+R058,transaction_date must be a valid date,transactions,transaction_date,date_validity,not_future; allow_null
+R059,amount cannot be negative,transactions,amount,consistency,non_negative; allow_null
+R060,project_id must reference an existing record,transactions,project_id,referential_integrity,exists in projects.project_id; allow_null
+R061,approved_by must reference an existing record,transactions,approved_by,referential_integrity,exists in employees.employee_id; allow_null
+R062,employee_id must be present,employees_salary_history,employee_id,completeness,not_null; score >= 90%
+R063,previous_salary must be present,employees_salary_history,previous_salary,completeness,not_null; score >= 90%
+R064,new_salary must be present,employees_salary_history,new_salary,completeness,not_null; score >= 90%
+R065,previous_role must be present,employees_salary_history,previous_role,completeness,not_null; score >= 90%
+R066,new_role must be present,employees_salary_history,new_role,completeness,not_null; score >= 90%
+R067,previous_level must be present,employees_salary_history,previous_level,completeness,not_null; score >= 90%
+R068,new_level must be present,employees_salary_history,new_level,completeness,not_null; score >= 90%
+R069,effective_date must be present,employees_salary_history,effective_date,completeness,not_null; score >= 90%
+R070,change_type must be present,employees_salary_history,change_type,completeness,not_null; score >= 90%
+R071,change_reason must be present,employees_salary_history,change_reason,completeness,not_null; score >= 90%
+R072,Key must be present and unique,employees_salary_history,employee_id|effective_date|new_salary|new_role|new_level|change_type|change_reason,uniqueness,unique
+R073,previous_salary within allowed range,employees_salary_history,previous_salary,numeric_validity,between 0 and 100000; allow_null
+R074,new_salary within allowed range,employees_salary_history,new_salary,numeric_validity,between 0 and 100000; allow_null
+R075,effective_date must be a valid date,employees_salary_history,effective_date,date_validity,not_future; allow_null
+R076,new_salary cannot be negative,employees_salary_history,new_salary,consistency,non_negative; allow_null
+R077,employee_id must reference an existing record,employees_salary_history,employee_id,referential_integrity,exists in employees.employee_id; allow_null
+R078,Transactions updated within 30 days,transactions,transaction_date,freshness,max_date within 30 days
+R079,Check repeated transaction amounts,transactions,amount,distribution,most_common_share <= 30%

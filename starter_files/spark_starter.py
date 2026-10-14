@@ -51,12 +51,16 @@ HOW TO RUN
 from pyspark.sql import SparkSession
 from pyspark.sql import functions as F
 from pyspark.sql.types import (
-    StructType, StructField, StringType, TimestampType, MapType
+    StructType,
+    StructField,
+    StringType,
+    TimestampType,
+    MapType,
 )
 import os
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-BASE_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EVENTS_DIR = os.path.join(BASE_DIR, "datasets", "events_stream")
 OUTPUT_DIR = os.path.join(BASE_DIR, "outputs", "spark")
 
@@ -64,6 +68,7 @@ OUTPUT_DIR = os.path.join(BASE_DIR, "outputs", "spark")
 # ==============================================================================
 # STEP 1 — Initialise Spark
 # ==============================================================================
+
 
 def get_spark_session() -> SparkSession:
     """
@@ -83,6 +88,7 @@ def get_spark_session() -> SparkSession:
 # ==============================================================================
 # STEP 2 — Load events
 # ==============================================================================
+
 
 def load_events(spark: SparkSession, events_dir: str):
     """
@@ -111,6 +117,7 @@ def load_events(spark: SparkSession, events_dir: str):
 # STEP 3 — Validate and clean
 # ==============================================================================
 
+
 def validate_events(df):
     """
     Validate and clean the raw events DataFrame.
@@ -130,6 +137,7 @@ def validate_events(df):
 # ==============================================================================
 # STEP 4 — Aggregations
 # ==============================================================================
+
 
 def project_activity_summary(df):
     """
@@ -205,6 +213,7 @@ def daily_event_volume(df):
 # STEP 5 — Write outputs
 # ==============================================================================
 
+
 def write_parquet(df, name: str, output_dir: str):
     """
     Write a DataFrame to Parquet.
@@ -225,23 +234,24 @@ def write_parquet(df, name: str, output_dir: str):
 # PIPELINE ENTRY POINT
 # ==============================================================================
 
+
 def run_pipeline():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     spark = get_spark_session()
 
-    raw         = load_events(spark, EVENTS_DIR)
-    clean       = validate_events(raw)
+    raw = load_events(spark, EVENTS_DIR)
+    clean = validate_events(raw)
 
-    proj_summary  = project_activity_summary(clean)
-    user_summary  = user_activity_summary(clean)
-    esc_log       = escalation_log(clean)
-    daily_vol     = daily_event_volume(clean)
+    proj_summary = project_activity_summary(clean)
+    user_summary = user_activity_summary(clean)
+    esc_log = escalation_log(clean)
+    daily_vol = daily_event_volume(clean)
 
     write_parquet(proj_summary, "project_activity_summary", OUTPUT_DIR)
-    write_parquet(user_summary, "user_activity_summary",    OUTPUT_DIR)
-    write_parquet(esc_log,      "escalation_log",           OUTPUT_DIR)
-    write_parquet(daily_vol,    "daily_event_volume",       OUTPUT_DIR)
+    write_parquet(user_summary, "user_activity_summary", OUTPUT_DIR)
+    write_parquet(esc_log, "escalation_log", OUTPUT_DIR)
+    write_parquet(daily_vol, "daily_event_volume", OUTPUT_DIR)
 
     spark.stop()
     print("Spark pipeline complete.")

@@ -1,0 +1,9 @@
+services:
+  etl:
+    build: .
+    image: presight-etl
+    environment:
+      DATA_DIR: /app/datasets
+      OUTPUT_DIR: /app/outputs
+    volumes:
+      - ./outputs:/app/outputs

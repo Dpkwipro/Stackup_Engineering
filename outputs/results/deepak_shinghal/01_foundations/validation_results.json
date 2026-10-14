@@ -1,0 +1,59 @@
+{
+  "duplicate_currents": 0,
+  "missing_currents": 0,
+  "overlapping_periods": 0,
+  "foreign_key_violations": 0,
+  "historical_value_mismatches": 0,
+  "version_history_top_10": [
+    [
+      "EMP0026",
+      6
+    ],
+    [
+      "EMP0070",
+      6
+    ],
+    [
+      "EMP0115",
+      6
+    ],
+    [
+      "EMP0121",
+      6
+    ],
+    [
+      "EMP0135",
+      6
+    ],
+    [
+      "EMP0141",
+      6
+    ],
+    [
+      "EMP0165",
+      6
+    ],
+    [
+      "EMP0166",
+      6
+    ],
+    [
+      "EMP0234",
+      6
+    ],
+    [
+      "EMP0238",
+      6
+    ]
+  ],
+  "table_counts": {
+    "dim_project": 500,
+    "dim_employee": 2826,
+    "dim_date": 1674,
+    "dim_vendor": 25,
+    "bridge_employee_project": 43047,
+    "fact_transactions": 50000
+  },
+  "unknown_approver_facts": 2469,
+  "unmatched_nonnull_approvers": 25
+}

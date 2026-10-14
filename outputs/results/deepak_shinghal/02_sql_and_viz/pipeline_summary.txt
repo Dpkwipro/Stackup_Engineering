@@ -1,0 +1,17 @@
+Pillar 2 ETL pipeline summary
+Run timestamp: 2026-10-14T22:55:33.187133+04:00
+Projects before/after: 500/500
+Employees before/after: 1000/1000
+Transactions before/after: 50000/50000
+Execution time (complete ETL, warehouse, SQL, benchmark, dashboard, CSV export): 11.684 seconds
+Null source amount preserved; amount_aed uses 0.0 for reporting: 740
+Missing approved_by preserved; name Unknown approver; is_approved False: 2444
+Current employee names used for enrichment; historical versions remain in warehouse facts.
+All source currencies validated as AED; amount_aed does not perform FX conversion.
+LEFT joins validated many-to-one; no transaction loss or duplication.
+Foundation cleaning decisions: see 01_foundations/quality_summary.json and README.
+Date errors or unknown project references fail explicitly; no silent date replacement.
+Query optimization: 2.15x; results equal: True
+SQL NULL amounts excluded by SUM/AVG; SQL shares and financial issues use AED facts.
+Dashboard is the permitted static, annotated PDF mockup; slicers are design controls.
+SQLite uses NUMERIC affinity for DECIMAL; exact financial arithmetic is not guaranteed.

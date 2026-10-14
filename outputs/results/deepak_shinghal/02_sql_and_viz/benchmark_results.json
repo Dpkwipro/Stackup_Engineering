@@ -1,0 +1,124 @@
+{
+  "sqlite_version": "3.53.2",
+  "row_count": 923,
+  "baseline_median_ms": 25.949083967134356,
+  "rewrite_without_indexes_median_ms": 27.01070799957961,
+  "optimized_median_ms": 12.067625066265464,
+  "speedup": 2.1503057830056327,
+  "baseline_runs_ms": [
+    26.902124984189868,
+    26.698249974288046,
+    24.528500041924417,
+    25.949083967134356,
+    24.744207970798016,
+    28.673749999143183,
+    24.584957980550826
+  ],
+  "rewrite_runs_ms": [
+    27.01070799957961,
+    24.787166039459407,
+    26.83587500359863,
+    30.086333048529923,
+    26.66245901491493,
+    27.906958013772964,
+    36.37604205869138
+  ],
+  "optimized_runs_ms": [
+    11.356999981217086,
+    12.251375010237098,
+    12.067625066265464,
+    15.066209016367793,
+    9.899290977045894,
+    9.89537499845028,
+    13.234166079200804
+  ],
+  "results_equal": true,
+  "original_plan": [
+    [
+      6,
+      0,
+      216,
+      "SCAN t"
+    ],
+    [
+      15,
+      0,
+      0,
+      "SCALAR SUBQUERY 1"
+    ],
+    [
+      20,
+      15,
+      216,
+      "SCAN transactions"
+    ],
+    [
+      55,
+      0,
+      53,
+      "SEARCH p USING AUTOMATIC PARTIAL COVERING INDEX (project_id=?)"
+    ],
+    [
+      78,
+      0,
+      53,
+      "SEARCH e USING AUTOMATIC COVERING INDEX (employee_id=?)"
+    ],
+    [
+      102,
+      0,
+      0,
+      "USE TEMP B-TREE FOR ORDER BY"
+    ]
+  ],
+  "optimized_plan": [
+    [
+      9,
+      0,
+      50,
+      "SEARCH transactions USING INDEX idx_transactions_status_amount_project (payment_status=? AND amount>?)"
+    ],
+    [
+      13,
+      0,
+      0,
+      "SCALAR SUBQUERY 2"
+    ],
+    [
+      16,
+      13,
+      0,
+      "CO-ROUTINE pending_average"
+    ],
+    [
+      19,
+      16,
+      54,
+      "SEARCH transactions USING COVERING INDEX idx_transactions_status_amount_project (payment_status=?)"
+    ],
+    [
+      32,
+      13,
+      16,
+      "SCAN pending_average"
+    ],
+    [
+      45,
+      0,
+      46,
+      "SEARCH projects USING INDEX idx_projects_id (project_id=?)"
+    ],
+    [
+      58,
+      0,
+      46,
+      "SEARCH e USING INDEX idx_employees_id (employee_id=?)"
+    ],
+    [
+      81,
+      0,
+      0,
+      "USE TEMP B-TREE FOR ORDER BY"
+    ]
+  ]
+}

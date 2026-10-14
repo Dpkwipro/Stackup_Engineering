@@ -1,0 +1,12 @@
+outputs/
+.git/
+**/__pycache__/
+**/*.pyc
+venv/
+.venv*/
+**/.DS_Store
+.pytest_cache/
+.agents/
+.codex/
+.aws/
+.env

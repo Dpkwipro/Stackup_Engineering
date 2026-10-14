@@ -1,0 +1,21 @@
+rule_name,column,dimension,condition,checked_rows,passed_rows,failed_rows,score_pct,threshold_pct,status,details,rule_id,tablename
+transaction_id must be present,transaction_id,completeness,not_null; score >= 90%,50000,50000,0,100.0,90.0,PASS,Total rows: 50000; excluded rows: 0,R044,transactions
+project_id must be present,project_id,completeness,not_null; score >= 90%,50000,50000,0,100.0,90.0,PASS,Total rows: 50000; excluded rows: 0,R045,transactions
+vendor_id must be present,vendor_id,completeness,not_null; score >= 90%,50000,50000,0,100.0,90.0,PASS,Total rows: 50000; excluded rows: 0,R046,transactions
+vendor_name must be present,vendor_name,completeness,not_null; score >= 90%,50000,50000,0,100.0,90.0,PASS,Total rows: 50000; excluded rows: 0,R047,transactions
+category must be present,category,completeness,not_null; score >= 90%,50000,50000,0,100.0,90.0,PASS,Total rows: 50000; excluded rows: 0,R048,transactions
+amount must be present,amount,completeness,not_null; score >= 90%,50000,49260,740,98.52,90.0,PASS,Total rows: 50000; excluded rows: 0,R049,transactions
+currency must be present,currency,completeness,not_null; score >= 90%,50000,50000,0,100.0,90.0,PASS,Total rows: 50000; excluded rows: 0,R050,transactions
+transaction_date must be present,transaction_date,completeness,not_null; score >= 90%,50000,50000,0,100.0,90.0,PASS,Total rows: 50000; excluded rows: 0,R051,transactions
+approved_by must be present,approved_by,completeness,not_null; score >= 90%,50000,47556,2444,95.11,90.0,PASS,Total rows: 50000; excluded rows: 0,R052,transactions
+payment_status must be present,payment_status,completeness,not_null; score >= 90%,50000,50000,0,100.0,90.0,PASS,Total rows: 50000; excluded rows: 0,R053,transactions
+invoice_ref must be present,invoice_ref,completeness,not_null; score >= 90%,50000,50000,0,100.0,90.0,PASS,Total rows: 50000; excluded rows: 0,R054,transactions
+notes must be present,notes,completeness,not_null; score >= 90%,50000,39249,10751,78.5,90.0,FAIL,Total rows: 50000; excluded rows: 0,R055,transactions
+Key must be present and unique,transaction_id,uniqueness,unique,50000,50000,0,100.0,100.0,PASS,Total rows: 50000; excluded rows: 0,R056,transactions
+amount within allowed range,amount,numeric_validity,between 0 and 10000000; allow_null,49260,49260,0,100.0,100.0,PASS,Total rows: 50000; excluded rows: 740,R057,transactions
+transaction_date must be a valid date,transaction_date,date_validity,not_future; allow_null,50000,50000,0,100.0,100.0,PASS,Total rows: 50000; excluded rows: 0,R058,transactions
+amount cannot be negative,amount,consistency,non_negative; allow_null,49260,49260,0,100.0,100.0,PASS,Total rows: 50000; excluded rows: 740,R059,transactions
+project_id must reference an existing record,project_id,referential_integrity,exists in projects.project_id; allow_null,50000,50000,0,100.0,100.0,PASS,Total rows: 50000; excluded rows: 0,R060,transactions
+approved_by must reference an existing record,approved_by,referential_integrity,exists in employees.employee_id; allow_null,47556,47556,0,100.0,100.0,PASS,Total rows: 50000; excluded rows: 2444,R061,transactions
+Transactions updated within 30 days,transaction_date,freshness,max_date within 30 days,1,0,1,0.0,100.0,FAIL,Latest date: 2026-08-04; age: 71 days; limit: 30 days; invalid dates: 0,R078,transactions
+Check repeated transaction amounts,amount,distribution,most_common_share <= 30%,1,1,0,100.0,100.0,PASS,Most common share: 0.02%; limit: 30%; non-null rows: 49260,R079,transactions

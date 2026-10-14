@@ -53,26 +53,28 @@ from datetime import datetime
 # from kafka.admin import NewTopic
 
 logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s | %(levelname)s | %(message)s"
+    level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s"
 )
 logger = logging.getLogger(__name__)
 
 # ── Paths ──────────────────────────────────────────────────────────────────────
-BASE_DIR        = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EVENTS_FILE     = os.path.join(BASE_DIR, "datasets", "events_stream", "events_2025_01.jsonl")
-OUTPUT_DIR      = os.path.join(BASE_DIR, "outputs", "kafka")
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+EVENTS_FILE = os.path.join(
+    BASE_DIR, "datasets", "events_stream", "events_2025_01.jsonl"
+)
+OUTPUT_DIR = os.path.join(BASE_DIR, "outputs", "kafka")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # ── Kafka config ───────────────────────────────────────────────────────────────
-KAFKA_BOOTSTRAP  = "localhost:9092"
-TOPIC_EVENTS     = "presight.project.events"
+KAFKA_BOOTSTRAP = "localhost:9092"
+TOPIC_EVENTS = "presight.project.events"
 TOPIC_ESCALATIONS = "presight.escalations.critical"
 
 
 # ==============================================================================
 # SETUP — Create Kafka topics
 # ==============================================================================
+
 
 def create_topics():
     """
@@ -93,6 +95,7 @@ def create_topics():
 # ==============================================================================
 # PRODUCER
 # ==============================================================================
+
 
 def build_producer():
     """
@@ -130,6 +133,7 @@ def run_producer(producer, events_file: str, delay_seconds: float = 0.5):
 # ==============================================================================
 # CONSUMER
 # ==============================================================================
+
 
 def build_consumer(topic: str):
     """
@@ -170,11 +174,15 @@ def run_consumer(consumer):
     # Write summary
     summary_path = os.path.join(OUTPUT_DIR, "summary.json")
     with open(summary_path, "w") as f:
-        json.dump({
-            "run_at": datetime.utcnow().isoformat(),
-            "topic": TOPIC_EVENTS,
-            "event_counts": summary
-        }, f, indent=2)
+        json.dump(
+            {
+                "run_at": datetime.utcnow().isoformat(),
+                "topic": TOPIC_EVENTS,
+                "event_counts": summary,
+            },
+            f,
+            indent=2,
+        )
     logger.info("Summary written to: %s", summary_path)
 
     return summary
@@ -184,13 +192,14 @@ def run_consumer(consumer):
 # ENTRY POINT
 # ==============================================================================
 
+
 def main():
     parser = argparse.ArgumentParser(description="Kafka assessment — producer/consumer")
     parser.add_argument(
         "--mode",
         choices=["producer", "consumer", "both"],
         default="both",
-        help="Run as producer, consumer, or both"
+        help="Run as producer, consumer, or both",
     )
     args = parser.parse_args()
 
@@ -210,7 +219,7 @@ def main():
         run_producer(producer, EVENTS_FILE)
 
         consumer = build_consumer(TOPIC_EVENTS)
-        summary  = run_consumer(consumer)
+        summary = run_consumer(consumer)
         print("\nEvent summary:", json.dumps(summary, indent=2))
 
 
